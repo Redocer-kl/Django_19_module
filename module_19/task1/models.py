@@ -19,3 +19,21 @@ class Game(models.Model):
 
     def __str__(self):
         return self.title
+
+# from task1.models import Buyer, Game
+#
+# # Создание записей Buyer
+# buyer1 = Buyer.objects.create(name="Алексей", age=17, balance = 1000)  # младше 18
+# buyer2 = Buyer.objects.create(name="Ирина", age=25, balance = 1000)   # старше 18
+# buyer3 = Buyer.objects.create(name="Сергей", age=30, balance = 1000)   # старше 18
+#
+# # Создание записей Game
+# game1 = Game.objects.create(title="cyberpunk 2077", cost = 1000, size=100, description="test",age_limited=True)   # с ограничением по возрасту
+# game2 = Game.objects.create(title="Игра 2", cost = 1000, size=100, description="test", age_limited=False)  # без ограничения по возрасту
+# game3 = Game.objects.create(title="Игра 3", cost = 1000, size=100, description="test",  age_limited=True)   # с ограничением по возрасту
+#
+# # Назначение покупателей для игр
+# game1.buyer.set([buyer2, buyer3])  # Игра 1 доступна для покупателей 2 и 3
+# game2.buyer.set([buyer1, buyer2, buyer3])  # Игра 2 доступна для всех покупателей
+# game3.buyer.set([buyer2, buyer3])  # Игра 3 доступна для покупателей 2 и 3
+#
