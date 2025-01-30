@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'UrbanDjango.wsgi.application'
+WSGI_APPLICATION = 'module_19.wsgi.application'
 
 
 # Database
