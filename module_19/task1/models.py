@@ -20,6 +20,17 @@ class Game(models.Model):
     def __str__(self):
         return self.title
 
+from django.db import models
+
+class News(models.Model):
+    title = models.CharField(max_length=200)
+    content = models.TextField()
+    date = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title
+
+
 # from task1.models import Buyer, Game
 #
 # # Создание записей Buyer
