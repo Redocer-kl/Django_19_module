@@ -8,7 +8,7 @@ class GameAdmin(admin.ModelAdmin):
     list_per_page = 20
 
 class BuyerAdmin(admin.ModelAdmin):
-    list_display = ('name', 'balance', 'age')
+    list_display = ('name', 'balance',  'age')
     list_filter = ('balance', 'age')
     search_fields = ('name',)
     list_per_page = 30
